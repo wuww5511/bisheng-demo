@@ -1,0 +1,19 @@
+.tpl-wrapper{
+    display: flex;
+}
+.tpl-doc{
+    flex: 1;
+    overflow: auto;
+}
+.tpl-preview{
+    width: 375px;
+    margin-left: 15px;
+    iframe{
+        width: 100%;
+        height: 667px;
+        border: 1px solid #e9e9e9;
+    }
+}
+.mt{
+    margin-top: 20px;
+}

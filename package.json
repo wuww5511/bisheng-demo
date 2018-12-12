@@ -1,0 +1,51 @@
+{
+  "name": "bisheng-demo",
+  "version": "0.0.1",
+  "description": "bisheng-demo",
+  "main": "lib/index.js",
+  "keywords": [
+    "react"
+  ],
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "cross-env-shell \"yarn && bisheng start\"",
+    "build": "cross-env-shell \"yarn && node build\"",
+    "build:site": "cross-env-shell \"yarn && bisheng build\"",
+    "publish:site": "cross-env-shell \"yarn && bisheng gh-pages\"",
+    "publish:lib": "cross-env-shell \"yarn && yarn run build && npm version patch && npm publish && git push\""
+  },
+  "browserslist": "> 0%",
+  "author": "wuweiwei <wuww5511@126.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "antd": "^3.11.2",
+    "autoprefixer": "^9.1.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "bisheng": "^0.28.0",
+    "bisheng-plugin-react": "^0.6.3",
+    "bisheng-plugin-toc": "^0.4.4",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.3",
+    "file-loader": "^2.0.0",
+    "glob": "^7.1.2",
+    "gulp": "^3.9.1",
+    "node-sass": "^4.8.3",
+    "postcss": "^7.0.2",
+    "postcss-px2rem": "^0.3.0",
+    "qrcode.react": "^0.8.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "rimraf": "^2.6.2",
+    "write": "^1.0.3"
+  }
+}
